@@ -68,11 +68,11 @@ function SaveFormData() {
               <option value="1" selected>
                 1st Grade
               </option>
-              <option value="2">8th Grade</option>
-              <option value="3">9th Grade</option>
-              <option value="4">10th Grade</option>
-              <option value="5">11th Grade</option>
-              <option value="5">12th Grade</option>
+              <option value="8">8th Grade</option>
+              <option value="9">9th Grade</option>
+              <option value="10">10th Grade</option>
+              <option value="11">11th Grade</option>
+              <option value="12">12th Grade</option>
             </select>
             <br />
             <label>School</label>
