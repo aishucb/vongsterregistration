@@ -57,18 +57,22 @@ function SaveFormData() {
         </button>
         {showDetails && (
           <div className='style fade-in'>
-            <label>Gender</label>
-            <input name="Gender" required />
+            <label>Genter</label>
+            <select name="Grade">
+              <option value="Male" selected>
+                Femaleale
+              </option>
+              <option value="Female">Male</option>
+              <option value="Rather not say">Rather not say</option>
+            </select>
             <br />
             <label>City</label>
             <input name="City" required />
             <br />
             <label>Grade</label>
             <select name="Grade">
-              <option value="1" selected>
-                1st Grade
-              </option>
-              <option value="8">8th Grade</option>
+              
+              <option value="8" selected>8th Grade</option>
               <option value="9">9th Grade</option>
               <option value="10">10th Grade</option>
               <option value="11">11th Grade</option>
