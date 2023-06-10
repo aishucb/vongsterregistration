@@ -68,10 +68,11 @@ function SaveFormData() {
               <option value="1" selected>
                 1st Grade
               </option>
-              <option value="2">2nd Grade</option>
-              <option value="3">3rd Grade</option>
-              <option value="4">4th Grade</option>
-              <option value="5">5th Grade</option>
+              <option value="2">8th Grade</option>
+              <option value="3">9th Grade</option>
+              <option value="4">10th Grade</option>
+              <option value="5">11th Grade</option>
+              <option value="5">12th Grade</option>
             </select>
             <br />
             <label>School</label>
@@ -79,19 +80,24 @@ function SaveFormData() {
             <br />
             <label>Phone No</label>
             <input name="Phone No" required />
+            <em>Please add the one with WhatsApp</em>
             <br />
             <label>Email</label>
             <input name="Email" type="email" required />
             <br />
             <label>Areas of interest</label>
             <br />
-            <input type="checkbox" name="Areas of interest" value="Option 1" /> Option 1
+            <input type="checkbox" name="Areas of interest" value="Poverty Reduction" /> Poverty Reduction
             <br />
-            <input type="checkbox" name="Areas of interest" value="Option 2" /> Option 2
+            <input type="checkbox" name="Areas of interest" value="Sustainable Development and Practices" /> Sustainable Development and Practices
             <br />
-            <input type="checkbox" name="Areas of interest" value="Option 3" /> Option 3
+            <input type="checkbox" name="Areas of interest" value="Sanitation and Hygiene" /> Sanitation and Hygiene
             <br />
-            <input type="checkbox" name="Areas of interest" value="Option 4" /> Option 4
+            <input type="checkbox" name="Areas of interest" value="Gender Empowerment" /> Gender Empowerment
+            <br />
+            <input type="checkbox" name="Areas of interest" value="Climate Change" /> Climate Change
+            <br />
+            <input type="checkbox" name="Areas of interest" value="Other" />Other
             <br />
             <label>Other areas of interest</label>
 		<input name="Other areas of interest" />
