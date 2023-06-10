@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "install-server": "cd server && npm install",
+"start-server": "cd server && node app.js",
+"install-client": "cd client && npm install",
+"build-client": "cd client && npm run build",
+"start-client": "cd client && npm run start"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2"
+  }
+}
