@@ -59,10 +59,10 @@ function SaveFormData() {
           <div className='style fade-in'>
             <label>Genter</label>
             <select name="Grade">
-              <option value="Male" selected>
-                Femaleale
+              <option value="female" selected>
+                Female
               </option>
-              <option value="Female">Male</option>
+              <option value="Male">Male</option>
               <option value="Rather not say">Rather not say</option>
             </select>
             <br />
