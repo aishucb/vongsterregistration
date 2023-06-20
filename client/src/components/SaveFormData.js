@@ -39,26 +39,25 @@ function SaveFormData() {
   };
 
   return (
-    <div id="formcontainer">
+    <div id="formcontainer" style={{textAlign:"center",backgroundColor:"#003300",color:"white",paddingBottom: "25px"}}>
      
-      <form id="myForm" onSubmit={handleFormSubmit}>
-      <h6 className='section'>REGISTER <span style={{color:"#32cd32"}}>NOW</span></h6><br></br><br></br>
-        <label>Name</label>
-        <input name="Name" required />
+      <form id="myForm" onSubmit={handleFormSubmit} >
+      <h6 className='section' style={{color:"white"}}>REGISTER <span style={{color:"#32cd32"}}>NOW</span></h6><br></br><br></br>
+        <input name="Name" placeholder='Name' required style={{textAlign:"center"}} />
+      
+       
+        <input name="Pronoun" placeholder='Pronoun'  required style={{textAlign:"center"}}/>
         <br />
-        <label>Pronoun</label>
-        <input name="Pronoun" required />
+        <input name="Age" placeholder="Age" required style={{textAlign:"center"}}/>
         <br />
-        <label>Age</label>
-        <input name="Age" required />
-        <br />
-        <button id="more" onClick={showMore}>
+        <button id="more" onClick={showMore} style={{textAlign:"center",border:"solid 5px white",width:"25%"}}>
           more
         </button>
         {showDetails && (
           <div className='style fade-in'>
-            <label>Genter</label>
-            <select name="Grade">
+            
+            <select name="Genter" placeholder='genter' style={{textAlign:"center"}}>
+            <option value="" disabled selected hidden>Gender</option>
               <option value="female" selected>
                 Female
               </option>
@@ -66,28 +65,28 @@ function SaveFormData() {
               <option value="Rather not say">Rather not say</option>
             </select>
             <br />
-            <label>City</label>
-            <input name="City" required />
+           
+            <input name="City" placeholder='City' required style={{textAlign:"center"}}/>
             <br />
-            <label>Grade</label>
-            <select name="Grade">
-              
-              <option value="8" selected>8th Grade</option>
+            
+            <select name="Grade" style={{textAlign:"center"}}>
+            <option value="" disabled selected hidden>Grade</option>
+              <option value="8" >8th Grade</option>
               <option value="9">9th Grade</option>
               <option value="10">10th Grade</option>
               <option value="11">11th Grade</option>
               <option value="12">12th Grade</option>
             </select>
             <br />
-            <label>School</label>
-            <input name="School" required />
+            
+            <input name="School" placeholder='School' required style={{textAlign:"center"}}/>
             <br />
-            <label>Phone No</label>
-            <input name="Phone No" required />
+           
+            <input name="Phone No" placeholder='Phone No' required style={{textAlign:"center"}}/>
             <em>Please add the one with WhatsApp</em>
             <br />
-            <label>Email</label>
-            <input name="Email" type="email" required />
+            
+            <input name="Email" type="email" placeholder='Email' required style={{textAlign:"center"}}/>
             <br />
             <label>Areas of interest</label>
             <br />
@@ -107,15 +106,16 @@ function SaveFormData() {
 		<input name="Other areas of interest" />
 		<br/>
         <label>Are you part of any social welfare projects organizations? If yes please share</label>
-		<input name="Are you part of any social welfare projects organizations? If yes please share" />
+		<input name="Are you part of any social welfare projects organizations? If yes please share" style={{textAlign:"center"}}/>
 		<br/>
-		<label>Would you like to be added to our WhatsApp group for more details?</label>
-		<select name="Would you like to be added to our WhatsApp group for more details?">
-			<option value="Yes" selected>Yes</option>
+		
+		<select name="Would you like to be added to our WhatsApp group for more details?" style={{textAlign:"center"}}>
+    <option value="" disabled selected hidden>Would you like to be added to our WhatsApp group for more details?</option>
+      <option value="Yes" >Yes</option>
 			<option value="No">No</option>
 		</select>
 		<br/>
-        <button type="submit">Submit</button>
+        <button type="submit" style={{textAlign:"center",border:"solid 5px white",width:"25%"}}>Submit</button>
           </div>
 
         )}

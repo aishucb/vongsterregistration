@@ -75,7 +75,7 @@
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #32cd32;
+  color: #003300;
   margin-top: 30px;
   width: 100%;
   text-transform: capitalize;
@@ -85,10 +85,11 @@
   border: 1px solid #32cd32;
   transition: all 0.3s;
   outline: none;
+  
 }
 
 #myForm button:hover {
-  background-color: #32cd32 !important;
+  background-color: #003300 !important;
   color: #fff !important;
 }
 
@@ -97,7 +98,7 @@
 }
 
 #myForm button:active {
-  background-color: #238c23;
+  background-color: #182818;
 }
 
 #myForm .error {
@@ -176,4 +177,9 @@
   text-transform: capitalize;
   margin-bottom: 25px;
 
+}
+
+input
+{
+  width: 20%;
 }
