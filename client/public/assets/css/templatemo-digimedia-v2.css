@@ -1528,7 +1528,7 @@ Portfolio
 
 .portfolio-item:hover .down-content h4,
 .portfolio-item:hover .down-content span {
-  color: #843A11;
+  color: #ffffff;
 }
 
 .portfolio-item .thumb img {
@@ -1548,8 +1548,9 @@ Portfolio
 .portfolio-item .down-content h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: rgb(2, 2, 2);
   margin-bottom: 8px;
+  background-color: #083d056f;
   transition: all .3s;
 }
 
@@ -2108,4 +2109,25 @@ p
   font-size: 20px;
   color: #616060;
   font-weight: 500;
+}
+
+.element {
+  position: relative;
+}
+
+.element::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-image: url('your-image.jpg');
+  background-size: cover;
+}
+.strip
+{
+  background-color: #843A11;
+ 
 }
