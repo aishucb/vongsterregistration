@@ -19,7 +19,24 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <script>
+    function showMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("show-more-btn");
+  
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        moreText.style.display = "none";
+        btnText.innerHTML = "Read more";
+      } else {
+        dots.style.display = "none";
+        moreText.style.display = "inline";
+        btnText.innerHTML = "Read less";
+      }
+    }
+  </script>
+  
 
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -27,9 +44,9 @@
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Rubik:wght@300&display=swap');
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
   <!--
 
 TemplateMo 568 DigiMedia
@@ -101,7 +118,7 @@ https://templatemo.com/tm-568-digimedia
                   </div>
                   <div class="col-lg-12">
                     <div class="border-first-button scroll-to-section" >
-                      <a href="#root"><b>Register</b></a>
+                      <a href="#root"><b>REGISTER</b></a>
                     </div>
                   </div>
                 </div>
@@ -213,7 +230,7 @@ https://templatemo.com/tm-568-digimedia
   <div id="root">
   <iframe src="https://vong.orionsquare.org/1409-2/" width="100%" style="text-align: center;" height="600" frameborder="0" title="WPForm"></iframe>
 </div>
-  <div id="services" class="services section" style="background-image: url(./assets/images/earth3.png);">
+  <div id="services" class="services section" style="background-image: url('./assets/images/bg3.jpg'); padding-bottom: 25px;background-repeat:no-repeat;background-size:cover;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -246,7 +263,7 @@ https://templatemo.com/tm-568-digimedia
                     <div style="margin-right: 40px;">
                       <div class="thumb">
                         <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
-                        Advocacy and Policy
+                        Policy<br>
                         Engagement
                       </div>
                     </div>
@@ -456,28 +473,31 @@ https://templatemo.com/tm-568-digimedia
         <div class="col-lg-12">
           <div class="loop owl-carousel">
             <div class="item" >
-              <a href="#" >
+             
                 <div class="portfolio-item" >
                   <div class="thumb">
                     <img src="assets/images/aniket.jpeg" alt="" >
                   </div>
                   <div class="down-content">
                     <h4 class="strip">Aniket Sharma</h4>
-                    <p  onmouseover="this.style.color='#32cd32'" onmouseout="this.style.color='#000000'" style="font-size: 18px;padding: 10px;">a life-changer for me. Finding a programme that thoroughly addresses the climate problem and the fast extinction of endangered species was a dream come true for someone who is extremely concerned about both of these concerns. Through VONG, I was able to learn about the environmental issues we are now facing as well as real answers and mitigation techniques.</p>
+                    <p id="sentence" onmouseover="this.style.color='#32cd32'" onmouseout="this.style.color='#000000'" style="font-size: 18px;padding: 10px;" >
+                      a life-changer for me. Finding a programme that thoroughly addresses the climate problem and the fast extinction of endangered species was a dream come true for someone who is extremely concerned about both of these concerns. Through VONG, I was able to learn about the environmental issues we are now facing as well as real answers and mitigation techniques.</p>
+                    
+                    
                   </div>
                 </div>
-              </a>
+              
             </div>
             <div class="item" >
               <a href="#">
                 <div class="portfolio-item"  >
-                  <div class="thumb">
+                  <div class="thumb" >
                     <img src="assets/images/shiny.jpeg" alt="">
                   </div>
                   <div class="down-content">
                     <h4>Shiny Agnus</h4>
                     <p  onmouseover="this.style.color='#32cd32'" onmouseout="this.style.color='#000000'" style="font-size: 18px;padding: 10px;">The journey has been very fun so far and it's fun getting to meet so many people from all over the country. Lots of eye-opening sessions. Would love to be part of many more interesting sessions in future!</p>
-                  </div>
+                  <br><br><br></div>
                 </div>
               </a>
             </div>
@@ -489,7 +509,8 @@ https://templatemo.com/tm-568-digimedia
                   </div>
                   <div class="down-content" >
                     <h4>Vidit</h4>
-                    <p  onmouseover="this.style.color='#32cd32'" onmouseout="this.style.color='#000000'" style="font-size: 18px;padding: 10px;">Vong is a place where u can interact with other people of similar age groups, have fun, all this while learning something new and gaining more knowledge</p>
+                    <p  onmouseover="this.style.color='#32cd32'" onmouseout="this.style.color='#000000'" style="font-size: 18px;padding: 10px;">Vong is a place where u can interact with other people of similar age groups, have fun, all this while learning something new and gaining more knowledge </p>
+                  <br><br><br><br>
                   </div>
                 </div>
               </a>
@@ -508,17 +529,21 @@ https://templatemo.com/tm-568-digimedia
               </a>
             </div>
             <div class="item" >
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/tishya.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4> Tishya Chandok </h4>
-                    <p  onmouseover="this.style.color='#32cd32'" onmouseout="this.style.color='#000000'" style="font-size: 18px;padding: 10px;">I've really enjoyed being a part of the community. vong has provided me with an opportunity to discuss my views with like minded youth, which is extremely important also the activities are really fun and engaging</p>
-                  </div>
+             
+              <div class="portfolio-item">
+                <div class="thumb">
+                  <img src="assets/images/tishya.jpg" alt="">
                 </div>
-              </a>
+                <div class="down-content">
+                  <h4>Tishya Chandok</h4>
+                  <p  onmouseover="this.style.color='#32cd32'" onmouseout="this.style.color='#000000'" style="font-size: 18px;padding: 10px;">I've really enjoyed being a part of the community I'm in (dei) because i'm really interested in that field, and doing something for it
+                    and i think vong has provided me with an opportunity to discuss my views with like minded youth, which is extremely important
+                    also the activities are really fun and engaging :</p>
+                 <br>
+                </div>
+              </div>
+              
+              
             </div>
           </div>
         </div>
@@ -528,11 +553,11 @@ https://templatemo.com/tm-568-digimedia
 
   
 
-  <div id="contact" class="contact-us section">
-    <div class="container" style="background-image: url(./assets/images/earth1.png);background-repeat: no-repeat;">
-      <div class="row">
+  <div id="contact" class="contact-us section" style="background-image: url(./assets/images/bg6.png);padding-bottom: 0px;background-size: contain;"> 
+    <div class="container" >
+      <div class="row" >
         <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"  >
            
             <h4>Be a <em>Vongster</em></h4>
             <div class="border-first-button scroll-to-section">
@@ -565,12 +590,15 @@ https://templatemo.com/tm-568-digimedia
 
 
   <!-- Scripts -->
+  
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+ 
+
 
 </body>
 
