@@ -50,7 +50,7 @@ function SaveFormData() {
         <br />
         <input name="Age" placeholder="Age" required style={{textAlign:"center"}}/>
         <br />
-        <button id="more" onClick={showMore} style={{textAlign:"center",border:"solid 5px white",width:"30%"}}>
+        <button id="more" onClick={showMore} style={{textAlign:"center",border:"solid 5px white"}}>
           more
         </button>
         {showDetails && (
@@ -115,7 +115,7 @@ function SaveFormData() {
 			<option value="No">No</option>
 		</select>
 		<br/>
-        <button type="submit" style={{textAlign:"center",border:"solid 5px white",width:"25%"}}>Submit</button>
+        <button type="submit" style={{textAlign:"center",border:"solid 5px white"}}>Submit</button>
           </div>
 
         )}
