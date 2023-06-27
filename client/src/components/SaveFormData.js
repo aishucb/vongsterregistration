@@ -42,7 +42,7 @@ function SaveFormData() {
     <div id="formcontainer" style={{textAlign:"center",backgroundColor:"#003300",color:"white",paddingBottom: "25px"}}>
      
       <form id="myForm" onSubmit={handleFormSubmit} >
-      <h6 className='section' style={{color:"white"}}>REGISTER <span style={{color:"#32cd32"}}>NOW</span></h6><br></br><br></br>
+      <h6 className='section' style={{color:"white"}}>SHARE THE DETAILS, <span style={{color:"#32cd32"}}>JOIN US</span></h6><br></br><br></br>
         <input name="Name" placeholder='Name' required style={{textAlign:"center"}} />
       
        
@@ -50,7 +50,12 @@ function SaveFormData() {
         <br />
         <input name="Age" placeholder="Age" required style={{textAlign:"center"}}/>
         <br />
-        <button id="more" onClick={showMore} style={{textAlign:"center",border:"solid 5px white"}}>
+        <button id="more" onClick={showMore} style={{textAlign:"center",border:"solid 0px white"}} onMouseEnter={() => {
+    document.getElementById("more").style.backgroundColor = "solid 0.5px green";
+  }}
+  onMouseLeave={() => {
+    document.getElementById("more").style.border = "solid 0.5px white";
+  }}>
           more
         </button>
         {showDetails && (
@@ -88,6 +93,7 @@ function SaveFormData() {
             
             <input name="Email" type="email" placeholder='Email' required style={{textAlign:"center"}}/>
             <br />
+            <div style={{textAlign:"left",border:"solid 1px white",padding:"20px"}}>
             <label>Areas of interest</label>
             <br />
             <input type="checkbox" name="Areas of interest" value="Poverty Reduction" /> Poverty Reduction
@@ -102,6 +108,7 @@ function SaveFormData() {
             <br />
             <input type="checkbox" name="Areas of interest" value="Other" />Other
             <br />
+            </div>
             <label>Other areas of interest</label>
 		<input name="Other areas of interest" />
 		<br/>
@@ -115,7 +122,11 @@ function SaveFormData() {
 			<option value="No">No</option>
 		</select>
 		<br/>
-        <button type="submit" style={{textAlign:"center",border:"solid 5px white"}}>Submit</button>
+        <button type="submit" id="submit1" style={{textAlign:"center",border:"solid 0px white"}} onMouseEnter={() => {
+    document.getElementById("submit1").style.backgroundColor = "solid 0.5px green";
+  }}
+  onMouseLeave={() => {
+    document.getElementById("submit1").style.border = "solid 0.5px white";}}>Submit</button>
           </div>
 
         )}

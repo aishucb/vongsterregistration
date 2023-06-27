@@ -183,3 +183,36 @@ input
 {
   width: 20%;
 }
+
+.checkbox-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style for the label */
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Style for the checkboxes and their labels */
+input[type="checkbox"] {
+  margin-bottom: 5px;
+  transform: scale(1.5);
+  margin-right: 5px;
+  
+}
+
+label.checkbox-label {
+  display: inline-block;
+  font-weight: normal;
+}
+
+/* Style for the "Other areas of interest" label */
+label.other-label {
+  margin-top: 15px;
+  display: block;
+}
