@@ -25,11 +25,12 @@ function SaveFormData() {
     formData.push({ name: 'Areas of interest', value: areasOfInterest });
 
     $.ajax({
-      url: 'https://api.apispreadsheets.com/data/NZq2ABehF72yT0dk/',
+      url: 'https://api.apispreadsheets.com/data/tWH1gVg69TzKAXbh/',
       type: 'post',
       data: formData,
       success: () => {
         alert('Form Data Submitted :)');
+        
         navigate('/success');
       },
       error: () => {
